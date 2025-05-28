@@ -1,6 +1,6 @@
 # 🗣️ Accent Analysis API using OpenAI & Whisper
 
-This Flask-based API accepts a video URL, extracts audio, transcribes speech using OpenAI Whisper, and analyzes the speaker’s English accent using GPT (e.g., GPT-4).
+This Flask-based API accepts a video URL, extracts audio, transcribes speech using OpenAI Whisper, and analyzes the speaker’s English accent using GPT.
 
 ---
 

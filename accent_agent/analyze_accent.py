@@ -48,7 +48,7 @@ def analyze_accent(input_data: str) -> dict:
     try:
         logging.info("[STEP] Sending prompt to OpenAI GPT for accent analysis.")
         response = client.chat.completions.create(
-            model="gpt-4o-mini",  # or "gpt-4" if you have access
+            model="gpt-4",
             messages=[
                 {"role": "system", "content": "You analyze English accents."},
                 {"role": "user", "content": prompt}
