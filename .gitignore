@@ -1,4 +1,14 @@
-/venv_audio copy
+
+
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+.venv/
+
 /venv_audio
 /kagglehub
 .env
