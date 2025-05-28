@@ -1,6 +1,3 @@
-
-
-
 __pycache__/
 *.pyc
 *.pyo
@@ -12,3 +9,7 @@ venv/
 /venv_audio
 /kagglehub
 .env
+
+temp.py
+temp.ipynb
+accent_agent/accent_agent.py
