@@ -21,7 +21,7 @@ Send a `POST` request to `/accent-analysis`:
 
 ```json
 {
-  "video_link": "https://example.com/sample.mp4"
+  "video_link": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"
 }
 ```
 
@@ -63,7 +63,8 @@ python app.py
 
 ## 📁 Project Structure
 
-.
+```bash
+EnglishAccentAI
 ├── app.py
 ├── accent_agent/
 │ ├── **init**.py
@@ -75,6 +76,7 @@ python app.py
 │ └── app_YYYYMMDD.log
 ├── requirements.txt
 └── README.md
+```
 
 ## 📁 Project Structure
 
@@ -90,5 +92,31 @@ python app.py
 ```bash
 curl -X POST http://127.0.0.1:5000/accent-analysis \
      -H "Content-Type: application/json" \
-     -d '{"video_link": "https://example.com/sample.mp4"}'
+     -d '{"video_link": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"}'
+```
+
+## 📌 Notes
+
+- Ensure ffmpeg is installed and accessible in your system path.
+- Input video must be publicly accessible.
+- Use environment variables or .env files to manage API keys securely.
+
+<!-- CONTACT -->
+
+## Contact
+
+Al-Farabi Akash - alfa.farabi@gmail.com - +8801703212426
+
+Profile Link: [Resume Profile](https://farabiakash.github.io/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Author -->
+
+## 👨‍💻 Author
+
+Al-Farabi Akash — [LinkedIn](https://www.linkedin.com/in/al-farabi-akash/)
+
+```bash
+Let me know if you'd like the `requirements.txt` generated as well!
 ```
