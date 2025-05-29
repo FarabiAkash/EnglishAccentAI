@@ -1,10 +1,12 @@
 from flask import Flask, request, jsonify
 from accent_agent import download_video, extract_audio, transcribe_audio, analyze_accent
+from flask_cors import CORS
 import logging
 import os
 from datetime import datetime
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 # Ensure logs directory exists
 os.makedirs("logs", exist_ok=True)
@@ -17,7 +19,7 @@ logging.basicConfig(
     filemode="a"
 )
 
-@app.route('/accent-analysis', methods=['POST'])
+@app.route('/accent-analysis/', methods=['POST'])
 def accent_analysis():
     logging.info("[STEP] Received request for accent analysis.")
     data = request.get_json()
@@ -67,7 +69,7 @@ def accent_analysis():
             "status": "success",
             "accent_analysis": {
                 "accent": accent,
-                "confidence": round(confidence, 2),
+                "confidence": f'{round(confidence, 2) * 100}%',
                 "explanation": explanation
             }
         }), 200

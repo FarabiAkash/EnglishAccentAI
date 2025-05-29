@@ -67,13 +67,18 @@ python app.py
 EnglishAccentAI
 ├── app.py
 ├── accent_agent/
-│ ├── **init**.py
+│ ├── __init__.py
 │ ├── download_video.py
 │ ├── extract_audio.py
 │ ├── transcribe_audio.py
 │ └── analyze_accent.py
 ├── logs/
 │ └── app_YYYYMMDD.log
+│ └── download_video_YYYYMMDD.log
+├── audio/
+│ └── {all extracted audios}
+├── video/
+│ └── {all downloaded videos}
 ├── requirements.txt
 └── README.md
 ```
