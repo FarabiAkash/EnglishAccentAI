@@ -19,7 +19,7 @@ logging.basicConfig(
     filemode="a"
 )
 
-@app.route('/accent-analysis/', methods=['POST'])
+@app.route('/accent-analysis', methods=['POST'])
 def accent_analysis():
     logging.info("[STEP] Received request for accent analysis.")
     data = request.get_json()
@@ -83,4 +83,4 @@ def accent_analysis():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)

@@ -2,6 +2,11 @@ import openai
 import os
 import logging
 from datetime import datetime
+from dotenv import load_dotenv  # <-- Add this
+
+# Load environment variables from .env file
+load_dotenv()  # <-- Add this
+
 
 # Create logs directory if it doesn't exist
 os.makedirs("logs", exist_ok=True)
