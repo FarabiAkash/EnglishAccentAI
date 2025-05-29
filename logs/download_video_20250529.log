@@ -102,3 +102,34 @@
 2025-05-29 12:32:00,667 [INFO] [SUCCESS] Accent analysis complete.
 2025-05-29 12:32:00,667 [INFO] [STEP] Returning accent analysis result.
 2025-05-29 12:32:00,667 [INFO] 127.0.0.1 - - [29/May/2025 12:32:00] "POST /accent-analysis/ HTTP/1.1" 200 -
+2025-05-29 12:44:06,230 [INFO] [INFO] OpenAI client initialized.
+2025-05-29 12:44:06,243 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-29 12:44:06,243 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-29 12:44:12,351 [INFO] 127.0.0.1 - - [29/May/2025 12:44:12] "OPTIONS /accent-analysis/ HTTP/1.1" 200 -
+2025-05-29 12:44:12,355 [INFO] [STEP] Received request for accent analysis.
+2025-05-29 12:44:12,355 [INFO] [STEP] Downloading video.
+2025-05-29 12:44:12,355 [INFO] [STEP] Starting video download process.
+2025-05-29 12:44:12,357 [INFO] [STEP] Downloading direct video: https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4
+2025-05-29 12:44:16,009 [INFO] [SUCCESS] Video downloaded to video\WeAreGoingOnBullrun.mp4
+2025-05-29 12:44:16,009 [INFO] [SUCCESS] Video downloaded: video\WeAreGoingOnBullrun.mp4
+2025-05-29 12:44:16,009 [INFO] [STEP] Extracting audio from video.
+2025-05-29 12:44:16,009 [INFO] [STEP] Starting audio extraction process.
+2025-05-29 12:44:16,012 [INFO] [STEP] Extracting audio from video\WeAreGoingOnBullrun.mp4 to audio\WeAreGoingOnBullrun.wav
+2025-05-29 12:44:17,117 [INFO] [SUCCESS] Extracted audio to audio\WeAreGoingOnBullrun.wav
+2025-05-29 12:44:17,117 [INFO] [SUCCESS] Audio extracted: audio\WeAreGoingOnBullrun.wav
+2025-05-29 12:44:17,117 [INFO] [STEP] Transcribing audio.
+2025-05-29 12:44:17,120 [INFO] [STEP] Starting audio transcription process.
+2025-05-29 12:44:17,120 [INFO] [STEP] Sending audio file 'audio\WeAreGoingOnBullrun.wav' to OpenAI Whisper API.
+2025-05-29 12:44:23,581 [INFO] HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-29 12:44:23,589 [INFO] [SUCCESS] Audio transcription completed successfully.
+2025-05-29 12:44:23,589 [INFO] [SUCCESS] Audio transcribed.
+2025-05-29 12:44:23,589 [INFO] [STEP] Analyzing accent.
+2025-05-29 12:44:23,589 [INFO] [STEP] Starting accent analysis process.
+2025-05-29 12:44:23,589 [INFO] [STEP] Sending prompt to OpenAI GPT for accent analysis.
+2025-05-29 12:44:28,768 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-29 12:44:28,778 [INFO] [SUCCESS] GPT response received.
+2025-05-29 12:44:28,778 [INFO] [SUCCESS] Accent analysis JSON parsed successfully.
+2025-05-29 12:44:28,783 [INFO] [SUCCESS] Accent analysis complete.
+2025-05-29 12:44:28,783 [INFO] [STEP] Returning accent analysis result.
+2025-05-29 12:44:28,784 [INFO] 127.0.0.1 - - [29/May/2025 12:44:28] "POST /accent-analysis/ HTTP/1.1" 200 -
