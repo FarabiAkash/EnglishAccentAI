@@ -1,0 +1,13 @@
+2025-06-24 21:42:53,032 [INFO] [INFO] OpenAI client initialized.
+2025-06-24 21:43:19,300 [INFO] [INFO] OpenAI client initialized.
+2025-06-24 21:43:19,320 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-24 21:43:19,320 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-24 21:43:26,250 [INFO] 127.0.0.1 - - [24/Jun/2025 21:43:26] "GET / HTTP/1.1" 200 -
+2025-06-24 21:43:26,739 [INFO] 127.0.0.1 - - [24/Jun/2025 21:43:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-24 21:48:12,115 [INFO] [INFO] OpenAI client initialized.
+2025-06-24 21:48:12,140 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-24 21:48:12,140 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-24 21:48:18,415 [INFO] 127.0.0.1 - - [24/Jun/2025 21:48:18] "GET / HTTP/1.1" 200 -
+2025-06-24 21:48:18,962 [INFO] 127.0.0.1 - - [24/Jun/2025 21:48:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

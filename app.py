@@ -19,6 +19,12 @@ logging.basicConfig(
     filemode="a"
 )
 
+@app.route('/', methods=['GET'])
+def health_check():
+    return jsonify({
+        "result": "Running app"
+    }), 200
+
 @app.route('/accent-analysis', methods=['POST'])
 def accent_analysis():
     logging.info("[STEP] Received request for accent analysis.")
@@ -83,4 +89,5 @@ def accent_analysis():
 
 
 if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
     app.run(debug=False)
